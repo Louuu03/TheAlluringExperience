@@ -437,6 +437,7 @@ section{
 }
 .team img{
     width: 100%; 
+    height: auto;
     border-radius: 10px;
 }
 .team p{
@@ -508,7 +509,7 @@ footer{
     padding:3px;
     color: #0c282c;
 }
-h4{
+.ft{
     font-family: Redressed;
     font-size: 2em;
     margin-bottom: -5px;
