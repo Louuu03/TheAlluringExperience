@@ -14,7 +14,6 @@ const show=()=>{
 list.onclick=show;
 
 
-
 const quotes1= [
     'Relationships end too soon because people stop putting in the same effort to keep you, as they did to win you.',
     'Far too many people are looking for the right person, instead of trying to be the right person.',

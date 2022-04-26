@@ -24,13 +24,16 @@ h2{
     background-color: #D0EDF1;
     bottom: 100px;
     right: 50px;
-    line-height: 25px;
+    line-height: 55px;
     color: #000000;
     border: 2px solid white;
 }
 .up a{
     text-decoration: none;
     font-weight: 600;
+}
+.list{
+    display: none;
 }
 
 /*Header//////////////////////////////////*/
@@ -682,6 +685,7 @@ min-width: 0;
 }
 .vision{
     width: 98%;
+    padding: 0;
 }
 .contact img{
     display: none;
