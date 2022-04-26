@@ -11,10 +11,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akshar&family=Libre+Bodoni:wght@500&display=swap" rel="stylesheet">
     </head>
+    <a href="#title"><div class="up">Go to top</div></a>
+    <div class="list">MENU</div>
     <body>
         <header>
-            <img src="./pic/background.jpg" alt="Header">
             <div id="title"><h1>The Alluring Experience</h1></div>
+            <div class="mobileView">
+            <img src="./pic/background.jpg" alt="Header">
             <div class="quotes">
                 <div class="BigC">
                  <div class="change C1">We don’t meet people by accident. They are meant to cross our path for a reason.
@@ -24,7 +27,6 @@
                 <div class="change C3">
                 </div>   
             </div>
-                
                 <h2>One step closer.</h2>
                 <form class='registerForm'> 
                     <label for="email">Email :</label>
@@ -35,7 +37,7 @@
                     <select id="service" name="service">
                         <option value="Wedding ">Wedding Planning</option>
                         <option value="Purposing">Purposing Planning</option>
-                        <option value="Surprises">Pre-planned Regular Surprises</option>
+                        <option value="Surprises">Pre-planned Surprises</option>
                         <option value="Relationship">Relationship Counsel</option>
                         <option value="Couple">Couple Counsel</option>
                         <option value="Other">Other</option>
@@ -43,14 +45,15 @@
                     <input type="submit" value="Register" class="submit">
                 </form>
             </div>
+        </div>
         </header>
-        <nav>
+        <nav class="navBar">
             <ul>
                 <li><a href="#service">Service</a></li>
                 <li><a href="#review">Customer Review</a></li>
                 <li><a href="#price">Price</a></li>
                 <li><a href="#team">Our Team</a></li>
-                <li><a href="#team">Contact Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
         <main>
@@ -77,38 +80,47 @@
                         <li>Presonal prefessional agent group</li>
                         <li>Wedding costume renting</li>
                         <li>Photogropher</li>
+                        <li>Various wedding theme</li>
+                        <li>Discount on affiliate enterprise</li>
                     </ul>
                 </div>
                 <div class="serviceSec">
                     <h3>Purposing Planning</h3>
                     <ul>
                         <li>Presonal prefessional agent group</li>
-                        <li>Wedding costume renting</li>
+                        <li>Purposing planning</li>
                         <li>Photogropher</li>
+                        <li>Discount on affiliate enterprise</li>
                     </ul>
                 </div>
                 <div class="serviceSec">
-                    <h3>Pre-planed Regular Sursprises</h3>
+                    <h3>Pre-planed Sursprises</h3>
                     <ul>
-                        <li>Presonal prefessional agent group</li>
-                        <li>Wedding costume renting</li>
-                        <li>Photogropher</li>
+                        <li>Presonal prefessional agent</li>
+                        <li>Custimized plan</li>
+                        <li>Cloud shcedule</li>
+                        <li>Special dates reminder</li>
+                        <li>Gift included</li>
+                        <li>Discount on affiliate enterprise</li>
                     </ul>
                 </div>
                 <div class="serviceSec">
                     <h3>Relationship Counsel</h3>
                     <ul>
-                        <li>Presonal prefessional agent group</li>
-                        <li>Wedding costume renting</li>
-                        <li>Photogropher</li>
+                        <li>Presonal prefessional agent</li>
+                        <li>Therapy session with professional</li>
+                        <li>Online or in person</li>
+                        <li>Reasonable price</li>
+                        <li>Discount on future Couple Counsel</li>
                     </ul>
                 </div>
                 <div class="serviceSec">
                     <h3>Couple Counsel</h3>
                     <ul>
-                        <li>Weekly meeting</li>
-                        <li>Solve Repeating problems</li>
-                        <li>Online service option</li>
+                        <li>Presonal prefessional agent</li>
+                        <li>Couple counsel with professional</li>
+                        <li>Online or in person</li>
+                        <li>Reasonable price</li>
                     </ul>
                 </div>
                 </div>
@@ -120,17 +132,17 @@
                         <p>It was fantastic. Although my wife and I always have differnet opinions, we made it still wit the help of TAE (The Alluring Experience). Everything went smoothly on the big day. We love it.</p>
                     </div>
                     <div class="R">
-                        <h3>Pre-planed Regular Sursprises <br>Dorian K.&emsp;</h3>
-                        <p>I am a busy businessman and it is hard for me to have my work-life balance. I know  </p>
+                        <h3>Pre-planed Sursprises <br>Dorian K.&emsp;</h3>
+                        <p>I am a busy businessman and it is hard for me to have my work-life balance. I love my husband and I want to treat him like a prince. TAE helps a lot and makes it easier to make us happy.</p>
                     </div>
                     <div class="L">
-                        <h3>Relationship Counsel: <br>&emsp;Ginny H.</h3>
-                        <p>I always </p>
+                        <h3>Relationship Counsel: <br>&emsp;Huter H.</h3>
+                        <p>I had a lot of trauma with my  past relationship, but this time I want to make it right with my wife. Regular session with the therapist helps a lot. I can see my progress no matter in fights or conversation. It became less tense and more affectionate in our everyday life. </p>
                     </div>
                     <div class="R">
                         <h3>Purposing Planning <br>Affel P.&emsp;</h3>
                         <p>I want to give my boyfriend a surprising purpose. He's always the one who spice up our Relationship but this time I want to make a change. With the help of TAE, 
-                            I gave my boyfriend an unforgettable moment and even we have footage to keep 
+                            I gave my boyfriend an unforgettable moment and even we have footage to keep!
                         </p>
                     </div>
             </section>
@@ -142,7 +154,7 @@
                         <h3>Basic<br><span>$99</span></h3>           
                             <ul>
                                 <li>Pre-planed Regular Sursprises x1</li>
-                                <li>Personal Agent Counsellation</li>
+                                <li>Counsel with personal agent</li>
                             </ul>
                         <button>Get Started</button>
                     </div>
@@ -173,11 +185,6 @@
                 <div class="center">
                 <h2>Our Team</h2>
                     <div class="teamMem">
-                        <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="phd">
-                        <h3>Dimitri</h3>
-                        <p>Manager of Photogrophic sector</p>
-                    </div>
-                    <div class="teamMem">
                         <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="">
                         <h3>Rémy</h3>
                         <p>Manager of Wedding and proposing planner</p>
@@ -192,11 +199,11 @@
                     <br><br>
                     Sometimes relationships can be exhausting. <br>
                     We all know it is yet the time to give up.<br>
-                    We're here to fuel you with energy, <br>push you a bit more, and support you.  
+                    We're here to fuel you with energy, push you a bit more, and support you.  
                     </div>
                     </div>
             </section>
-            <section class="contact">
+            <section id="contact" class="contact">
                     <div class="contactForm">
                     <form> 
                         <h2>Contact Us</h2>

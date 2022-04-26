@@ -1,3 +1,8 @@
+html{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
 body{
     text-align: center;
     font-family: 'Akshar', sans-serif;;
@@ -10,6 +15,22 @@ h2{
     margin-bottom: 30px;
     font-family: Redressed, 'Times New Roman', Times, serif;
     z-index: 10;
+}
+.up{
+    position: fixed;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #D0EDF1;
+    bottom: 100px;
+    right: 50px;
+    line-height: 25px;
+    color: #000000;
+    border: 2px solid white;
+}
+.up a{
+    text-decoration: none;
+    font-weight: 600;
 }
 
 /*Header//////////////////////////////////*/
@@ -131,6 +152,7 @@ transform: translate(0,100px);
     border-radius: 5px;
     box-shadow: 3px 3px 5px #2c3e41;
     font-weight: 600;
+    cursor: pointer;
 }
 .submit:hover{
     box-shadow: inset 3px 3px #2c3e41;
@@ -217,13 +239,14 @@ section{
 }
 .center{
     width: 70%;
+    min-width: 900px;
 }
 
 .serviceSec{
     display: flex;
     align-items: center;
     display: inline-flex;
-    width: 32%;
+    width: 31%;
     max-width: 400px;
     flex-direction: column;
     margin-left: 5px;
@@ -243,7 +266,7 @@ section{
     border-radius: 10px ;
     margin-top: -10px;
     width: 90%;
-    height: 300px;
+    height: 250px;
     color: black;
     font-size: 20px;
     font-weight: 500;
@@ -263,6 +286,7 @@ section{
 .review div{
     display: inline-flex;
     max-width: 900px;
+    min-width: 500px;
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -273,7 +297,7 @@ section{
 }
 .review p{
     text-align: center;
-    padding: 1em 10px;
+    padding: 16px 16px;
     font-family: Montserrat;
     font-weight: 900;
     text-shadow: 0.5px 0.5px white;
@@ -371,6 +395,7 @@ section{
     color: #4c686c;
     position:absolute;
     bottom: 20px;
+    cursor: pointer;
 }
 .mid button {
     box-shadow: inset 2px 2px #2c3e41;
@@ -417,16 +442,21 @@ section{
     font-weight: 600;
 }
 .vision{
-    font-size: 22px;
-    width: 25%;
-    padding-left: 15px;
+    font-size: 20px;
+    width: 45%;
+    padding-left: 25px;
     font-weight: 300;
 }
 .vision span{
     font-size: 30px;
     font-weight: 600;
 }
-
+.show nav{
+    display: block;
+}
+.close nav{
+    display: none;
+}
 
 /*Contact//////////////////////////////////*/
 .contact{
@@ -460,11 +490,14 @@ section{
     margin: 3px;
 }
 .contactForm .submit{
-    width: 595px;
+    width: 70%;
+    min-width: 275px;
 }
 textarea{
     margin-top: 10px;
+    width: 70%;
     border: 1px solid rgb(177, 177, 177);
+    min-width: 275px;
 }
 /*Footer//////////////////////////////////*/
 footer{
@@ -484,6 +517,173 @@ footer p {
 
 
 /*Media Query//////////////////////////////////*/
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 1000px){
+    h1{
+        font-size: 35px;
+        width: 97%;
+        line-height: 5px;
+    }
+#title{
+    width: 100%;
+    height: 30px;
+}
+.up{
+    line-height: 55px;
+    z-index: 50;
+    right: 10px;
+}
+.list{
+    display: block;
+    position: fixed;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #D0EDF1;
+    bottom: 170px;
+    right: 10px;
+    line-height: 55px;
+    font-weight: 700;
+    color: #000000;
+    border: 2px solid white;
+    z-index: 50;
+}
+nav{
+    display: none;
+    position: fixed;
+    width: 150px;
+    height: auto;
+    bottom: 195px;
+    z-index: 49;
+    right: 10px;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav li{
+    font-size: 20px;
+    background-color: #3d6267;
+    font-weight: 600px;
+}
+nav li a{
+    color:white;
+}
 
+.mobileView{
+    width: 100%;
+    display: flex;
+    height: auto;
+    font-size: 20px;
+   flex-direction: column;
+    align-items: center;
+}
+
+.mobileView img{
+    height: 300px;
+    object-fit: cover;
+    object-position: 20% 40%;
+}
+.quotes{
+    position:static;
+    width: 60%;
+    background-color: #edfcfe;
+    margin-top: -60px;
+    height: fit-content;
+}
+.quotes input{
+    width: 80%;
+}
+.registerForm select{
+    width: 80%;
+}
+.quotes h2{
+    font-size: 30px;
+    margin-bottom: -10px;
+}
+.quotes form{
+    width: 60%;
+    padding-top: 10px;
+}
+.BigC{
+    margin-top: 5px;
+    width: 80%;
+    height: 80px;
+}
+.change{
+    font-size: 20px;
+    width: 100%;
+    font-size: 15px;
+}
+.steps{
+font-size: 20px;
+}
+.service .center{
+    width: 70%;
+    min-width: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.service ul{
+    height: auto;
+}
+.serviceSec{
+    min-width: 250px;
+}
+.service h2{
+    width: 100%;
+}
+.review div{
+    flex-direction: column;
+    width: 80%;
+    min-width: 0;
+    align-items: center;
+}
+.review h3{
+    width: 100%;
+    border-radius: 0;
+    min-width: 0;
+}
+.price{
+    min-width: 0;
+    font-size: 15px;
+}
+
+.price .center{ 
+min-width: 0;
+}
+.priceTags{
+    flex-direction: column;
+}
+.tags{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.tags ul{
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+.tags button{
+    bottom: 20px;
+}
+.team .center{ 
+    min-width: 0;
+}
+
+.teamMem{
+        display: inline-flex;
+        margin: 0 10px;
+        flex-direction: column;
+        width: 40%;
+}
+.vision{
+    width: 98%;
+}
+.contact img{
+    display: none;
+}
 }
